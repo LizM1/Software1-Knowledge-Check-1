@@ -25,8 +25,9 @@ namespace KnowledgeCheck1_Calculator
 
                     if (int.TryParse(addNumber1, out int addNumOne) && int.TryParse(addNumber2, out int addNumTwo))
                     {
-                        Console.Write($"{addNumber1} + {addNumber2} = ");
-                        Console.Write(calculator.Add(addNumOne, addNumTwo));
+                      int result = (addNumOne + addNumTwo);
+                        Console.WriteLine(result);  
+                      }
                     }
                     else
                     {
@@ -41,9 +42,9 @@ namespace KnowledgeCheck1_Calculator
 
                     if (int.TryParse(subtractNumber1, out int subNumOne) && int.TryParse(subtractNumber2, out int subNumTwo))
                     {
-                        Console.Write($"{subtractNumber1} - {subtractNumber2} = ");
-                        Console.Write(calculator.Subtract(subNumOne, subNumTwo));
-                    }
+                        int result = (subNumOne - subNumTwo);
+                        Console.WriteLine(result);
+                     }
                     else
                     {
                         Console.WriteLine("One or more of the numbers is not an int");
@@ -57,8 +58,8 @@ namespace KnowledgeCheck1_Calculator
 
                     if (int.TryParse(multiplyNumber1, out int multiplyNumOne) && int.TryParse(multiplyNumber2, out int multiplyNumTwo))
                     {
-                        Console.Write($"{multiplyNumber1} * {multiplyNumber2} = ");
-                        Console.Write(calculator.Multiply(multiplyNumOne, multiplyNumTwo));
+                        int result = (multiplyNumOne * multiplyNumTwo);
+                        Console.WriteLine(result);
                     }
                     else
                     {
@@ -73,8 +74,8 @@ namespace KnowledgeCheck1_Calculator
 
                     if (double.TryParse(divideNumber1, out double divNumOne) && double.TryParse(divideNumber2, out double divNumTwo))
                     {
-                        Console.Write($"{divideNumber1} / {divideNumber2} = ");
-                        Console.Write(calculator.Divide(divNumOne, divNumTwo));
+                        double result =( divNumOne / divNumTwo );
+                        Console.WriteLine(result);
                     }
                     else
                     {
